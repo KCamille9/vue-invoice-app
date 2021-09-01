@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="app flex">
+    <div class="app flex flex-column">
       <Navigation/>
       <div class="app-content flex flex-column">
         <router-view />
@@ -29,6 +29,17 @@
 
 .app {
   background-color: #141625;
+  min-height: 100vh;
+  @media(min-width: 900px){
+    flex-direction: row !important;
+  }
+
+  .app-content {
+    padding: 0 20px;
+    flex: 1;
+    position: relative;
+
+  }
 
 }
 
