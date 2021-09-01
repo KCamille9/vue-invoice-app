@@ -1,11 +1,11 @@
 <template>
 <header class="flex">
-
-</header>
     <div class="branding flex">
         <img src="@/assets/file-invoice-dollar-solid.png" alt="" />
     </div>
-</template
+</header>
+
+</template>
 
 <script>
     export default {
@@ -13,7 +13,7 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 header {
     z-index: 99;
     flex-direction: row;
@@ -22,7 +22,7 @@ header {
         min-height: 100%;
         min-width: 90px;
         flex-direction: column;
-        border-radius: 0 20px 20 px 0;
+        border-radius: 0 20px 20px 0;
     }
 
     .branding {

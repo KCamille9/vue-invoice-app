@@ -1,6 +1,22 @@
 <template>
-  <router-view />
+  <div>
+    <div class="app flex">
+      <Navigation/>
+      <div class="app-content flex flex-column">
+        <router-view />
+      </div>
+    </div>
+  </div>
 </template>
+
+<script>
+  import Navigation from "./components/Navigation"
+  export default {
+    components: {
+      Navigation
+    }
+  }
+</script>
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
@@ -9,8 +25,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  background-color: #141625;
 }
+
+.app {
+  background-color: #141625;
+
+}
+
 button,
 .button {
   cursor: pointer;
